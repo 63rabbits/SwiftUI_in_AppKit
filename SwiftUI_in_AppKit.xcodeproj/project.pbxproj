@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3382FE7F2DCB6F730031422B /* SwiftUI_in_AppKit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3382FE7E2DCB6F730031422B /* SwiftUI_in_AppKit.png */; };
+		3382FE802DCB6F730031422B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3382FE7D2DCB6F730031422B /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3382FE5D2DCB6B990031422B /* SwiftUI_in_AppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_in_AppKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3382FE7D2DCB6F730031422B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3382FE7E2DCB6F730031422B /* SwiftUI_in_AppKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SwiftUI_in_AppKit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,8 @@
 		3382FE542DCB6B990031422B = {
 			isa = PBXGroup;
 			children = (
+				3382FE7D2DCB6F730031422B /* README.md */,
+				3382FE7E2DCB6F730031422B /* SwiftUI_in_AppKit.png */,
 				3382FE5F2DCB6B990031422B /* SwiftUI_in_AppKit */,
 				3382FE5E2DCB6B990031422B /* Products */,
 			);
@@ -109,6 +118,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3382FE7F2DCB6F730031422B /* SwiftUI_in_AppKit.png in Resources */,
+				3382FE802DCB6F730031422B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

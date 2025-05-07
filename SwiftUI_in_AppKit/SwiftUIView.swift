@@ -19,7 +19,8 @@ struct SwiftUIView: View {
             Text("SwiftUI View: \(viewModel.count)")
             Image(systemName: "swift")
                 .font(.system(size: 50))
-                .foregroundStyle(.red)        }
+                .foregroundStyle(.red)
+        }
     }
 }
 
