@@ -12,7 +12,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject var viewModel: SwiftUIViewModel
+    @ObservedObject var viewModel: ContentViewModel
 
     var body: some View {
         VStack(alignment: .center) {
@@ -24,7 +24,7 @@ struct ContentView: View {
     }
 }
 
-class SwiftUIViewModel: ObservableObject {
+class ContentViewModel: ObservableObject {
 
     @Published var count: Int
 
@@ -38,9 +38,9 @@ class SwiftUIViewModel: ObservableObject {
 
 // MARK: - Previews
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: SwiftUIViewModel(count: 12345))
+        ContentView(viewModel: ContentViewModel(count: 12345))
     }
 }
 
