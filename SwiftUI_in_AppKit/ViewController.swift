@@ -14,7 +14,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var countLabel: NSTextField!
 
     private var contentView: NSHostingView<ContentView>!
-    @State private var swiftUIViewModel = ContentViewModel(count: 0)
+    @State private var contentViewModel = ContentViewModel(count: 0)
 
     override func viewDidAppear() {
         self.view.window!.center()
@@ -25,7 +25,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        contentView = NSHostingView(rootView: ContentView(viewModel: swiftUIViewModel))
+        contentView = NSHostingView(rootView: ContentView(viewModel: contentViewModel))
 //        self.view.addSubview(swiftUIView)
         stackView.addView(contentView, in: .bottom)
         contentView.frame = .init(origin: .init(x: 10, y: 100), size: .init(width: 200, height: 200))
@@ -34,8 +34,8 @@ class ViewController: NSViewController {
 
 
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
-            self.swiftUIViewModel.count += 1
-            self.countLabel.stringValue = "AppKit View: \(self.swiftUIViewModel.count)"
+            self.contentViewModel.count += 1
+            self.countLabel.stringValue = "AppKit View: \(self.contentViewModel.count)"
         }
     }
 
