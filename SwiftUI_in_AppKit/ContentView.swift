@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  ContentView.swift
 //  SwiftUI_in_AppKit
 //
 //  Created by rabbit on 2025/05/07.
