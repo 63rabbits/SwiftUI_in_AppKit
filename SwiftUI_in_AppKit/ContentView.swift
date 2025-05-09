@@ -10,7 +10,7 @@ import SwiftUI
 
 // MARK: - SwiftUI View
 
-struct SwiftUIView: View {
+struct ContentView: View {
 
     @ObservedObject var viewModel: SwiftUIViewModel
 
@@ -40,7 +40,7 @@ class SwiftUIViewModel: ObservableObject {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView(viewModel: SwiftUIViewModel(count: 12345))
+        ContentView(viewModel: SwiftUIViewModel(count: 12345))
     }
 }
 
